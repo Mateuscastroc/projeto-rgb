@@ -9,14 +9,14 @@ function App() {
   return (
     <>
       <div className="App">
-        <h1 style={{"margin": "0px","background-color": "blue", "color": "white"}}>Projeto RGB | Exercicio React</h1>
+        <h1 style={{"margin": "0px","backgroundColor": "blue", "color": "white"}}>Projeto RGB | Exercicio React</h1>
       </div>
       <div style={{"display": "flex", 
-      "flex-direction": "column",
+      "flexDirection": "column",
       "position": "relative",
-      "max-width": "300px",
-      "margin-left": "10%"}}>
-        <Panel backGroundColor={{red: red, green: green, blue: blue}}></Panel>
+      "maxWidth": "300px",
+      "marginLeft": "10%"}}>
+        <Panel corDePreview={{red: red, green: green, blue: blue}}></Panel>
         <strong>Red: </strong>{red}
           <input value={red} onChange={({target})=> setStateRed(parseInt(target.value))} type="range" min={0} max={255}></input>
         <strong>Green: </strong>{green}
