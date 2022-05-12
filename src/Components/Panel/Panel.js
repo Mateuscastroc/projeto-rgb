@@ -12,6 +12,7 @@ function Panel (corDePreview) {
     return (
         <>
             <div style={{"backgroundColor": cor}} className="preview"></div>
+            <div onChange={(string)=> setTextoCor(string)}>{textoCor}</div>
             <button onClick={()=> mudaCor()}>Definir cor</button>
             <button onClick={()=> console.log(cor)}>Printa cor</button>
         </>
