@@ -3,9 +3,9 @@ import {useState} from "react";
 import Panel from './Components/Panel/Panel'
 
 function App() {
-  const [red, setStateRed] = useState (10);
-  const [green, setStateGreen] = useState (50);
-  const [blue, setStateBlue] = useState (100);
+  const [red, setStateRed] = useState (0);
+  const [green, setStateGreen] = useState (0);
+  const [blue, setStateBlue] = useState (0);
   return (
     <>
       <div className="App">

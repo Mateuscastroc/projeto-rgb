@@ -3,8 +3,7 @@ function Panel (backGroundColor) {
     let string = "#e0d900"
     function converteValoresEmCor (backGroundColor){
         // string = "rgb("+ backGroundColor.backGroundColor.red+ ", " +backGroundColor.backGroundColor.green + ", " +  backGroundColor.backGroundColor.blue +")"
-        // console.log(string)
-        string = "rgb(153, 255, 51)"
+        console.log(string)
         
     }
 
@@ -13,7 +12,8 @@ function Panel (backGroundColor) {
         <>
             <div style={{"backgroundColor": string}} className="preview">
             </div>
-            <button onClick={()=> converteValoresEmCor(backGroundColor)}>Printa cor
+            <button onClick={()=> converteValoresEmCor(backGroundColor)}>
+                Printa cor
             </button>
         </>
     );
