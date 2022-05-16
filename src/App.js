@@ -16,7 +16,7 @@ function App() {
       "position": "relative",
       "maxWidth": "300px",
       "marginLeft": "10%"}}>
-        <Panel corDePreview={{red: red, green: green, blue: blue}}></Panel>
+        <Panel corDePreview={`rgb(${red},${green},${blue})`}></Panel>
         <strong>Red: </strong>{red}
           <input value={red} onChange={({target})=> setStateRed(parseInt(target.value))} type="range" min={0} max={255}></input>
         <strong>Green: </strong>{green}
