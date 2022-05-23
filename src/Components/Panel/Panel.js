@@ -7,7 +7,7 @@ function Panel (corDePreview) {
     return (
         <>
             <div style={{"backgroundColor": corDePreview.corDePreview}} className="preview"></div>
-            <strong><div>{corDePreview.corDePreview}</div></strong>
+            <strong style={{"margin": "10px 10px 5px 5px"}}><div>Color code: {corDePreview.corDePreview}</div></strong>
             <button onClick={()=> console.log(corDePreview)}>Printa cor</button>
         </>
     );
