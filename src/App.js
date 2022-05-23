@@ -6,6 +6,7 @@ function App() {
   const [red, setStateRed] = useState (0);
   const [green, setStateGreen] = useState (0);
   const [blue, setStateBlue] = useState (0);
+  const [history, setHistory] = useState([]);
   return (
     <>
       <div className="App">
@@ -23,6 +24,13 @@ function App() {
           <input value={green} onChange={(target) => setStateGreen(parseInt(target.target.value))} type="range" min={0} max={255}></input>
         <strong>Blue:</strong>{blue}
           <input value={blue} onChange={({target})=>setStateBlue(parseInt(target.value))} type="range" min={0} max={255}></input>
+          <br></br>
+          <br></br>
+          <button onClick={
+            ()=>setHistory (
+            (h) => [[red, green, blue],...h])
+            }>Historico de cores</button>
+            {history}
       </div>
     </>
   );
